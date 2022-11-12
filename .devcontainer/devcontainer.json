@@ -1,0 +1,25 @@
+{
+	"name": "Go & PostgreSQL",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+
+	// Features to add to the dev container. More info: https://containers.dev/implementors/features.
+	"features": {
+		"ghcr.io/chuxel/feature-library/test-private-feature:latest": { }
+	},
+
+	// Configure tool-specific properties.
+	"customizations": {
+		"codespaces": {
+			"repositories": {
+				"chuxel/feature-library": {
+					"permissions": {
+						"contents": "read",
+						"packages": "read"
+					}
+				}
+			}
+		}
+	}
+}
