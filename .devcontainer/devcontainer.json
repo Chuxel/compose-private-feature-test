@@ -6,14 +6,14 @@
 
 	// Features to add to the dev container. More info: https://containers.dev/implementors/features.
 	"features": {
-		"ghcr.io/Chuxel/feature-library/test-private-feature:latest": { }
+		"ghcr.io/chuxel/feature-library/test-private-feature:latest": { }
 	},
 
 	// Configure tool-specific properties.
 	"customizations": {
 		"codespaces": {
 			"repositories": {
-				"Chuxel/feature-library": {
+				"chuxel/feature-library": {
 					"permissions": {
 						"contents": "read",
 						"packages": "read"
